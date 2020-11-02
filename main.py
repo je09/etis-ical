@@ -1,13 +1,9 @@
-from datetime import datetime, timedelta
-from apple_calendar_integration import ICloudCalendarAPI
-
-
-def 
+from parser import Week
 
 
 def main():
-    pass
-
+    week = Week('/Users/je09/Downloads/1.html')
+    print(week)
 
 if __name__ == '__main__':
     main()
