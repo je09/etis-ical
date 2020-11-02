@@ -73,7 +73,7 @@ class Lesson:
         lesson_meta = lesson.find_all('td')
 
         if lesson_meta[1].find('span', {'class': 'dis'}):  # Just in case
-            time = self.parse_time(lesson_meta[0].font.text)
+            self.time = self.parse_time(lesson_meta[0].font.text)
 
             self.teacher = lesson_meta[1].find('span', {'class': 'teacher'}).text.strip().split('\n')[0]
             self.name = lesson_meta[1].find('span', {'class': 'dis'}).text.strip()
