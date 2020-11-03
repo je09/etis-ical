@@ -1,5 +1,6 @@
 from datetime import datetime
 
+
 class Calendar:
     calendar_head = ('BEGIN:VCALENDAR\n'\
     'VERSION:2.0\n'\
@@ -115,7 +116,6 @@ class Calendar:
             )
 
             create_datetime = datetime.now().strftime('%Y%m%dT%H%M%MT')
-
 
             if self._event_list:
                 for event in self._event_list:

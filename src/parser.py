@@ -2,33 +2,6 @@ from datetime import datetime, date, timedelta
 from string import digits
 from bs4 import BeautifulSoup
 
-WEEKDAY = {
-        'Понедельник': 'mon',
-        'Вторник': 'tue',
-        'Среда': 'wed',
-        'Четверг': 'thu',
-        'Пятница': 'fri',
-        'Суббота': 'sat',
-    }
-
-WEEKDAY_ID = {
-        'mon': 1,
-        'tue': 2,
-        'wed': 3,
-        'thu': 4,
-        'fri': 5,
-        'sat': 6,
-    }
-
-WEEKDAY_REVERSE = {
-        'mon': 'Понедельник',
-        'tue': 'Вторник',
-        'wed' : 'Среда',
-        'thu' : 'Четверг',
-        'fri' : 'Пятница',
-        'sat' : 'Суббота',
-    }
-
 MONTH = {
         'января': 1,
         'февраля': 2,
@@ -43,10 +16,6 @@ MONTH = {
         'ноября': 11,
         'декабря': 12,
     }
-
-MONTH_REVERSE = [None, 'января', 'февраля', 'марта',
-                 'апреля', 'мая', 'июня', 'июля', 'августа',
-                 'сентября', 'октября', 'ноября', 'декабря']
 
 
 class Lesson:
