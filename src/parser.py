@@ -84,15 +84,9 @@ class Day:
 class Week:
     days: [Day] = []
 
-    def __init__(self, file_path):
-        self.file_path = file_path
-        self.html = self.__open_file__()
-
+    def __init__(self, html):
+        self.html = html
         self.parse_week()
-
-    def __open_file__(self):
-        with open(self.file_path, 'r', encoding='cp1251') as file:
-            return ''.join(file.readlines())
 
     def parse_week(self):
         soup = BeautifulSoup(self.html, "lxml")

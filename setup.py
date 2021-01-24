@@ -2,7 +2,7 @@ from setuptools import setup
 
 setup(
     name='etis-ical',
-    version='0.9',
+    version='1.0',
     packages=['src'],
     url='https://github.com/je09/etis-ical',
     license='MIT',
